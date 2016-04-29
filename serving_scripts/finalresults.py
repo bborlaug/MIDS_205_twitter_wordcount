@@ -8,8 +8,8 @@ if len(sys.argv) == 1:
   cur.execute("SELECT word, count FROM Tweetwordcount ORDER BY word, count")
   records = cur.fetchall()
   for rec in records:
-  print "word = ", rec[0]
-  print "count = ", rec[1], "\n"
+    print "word = ", rec[0]
+    print "count = ", rec[1], "\n"
   
   conn.commit()
   conn.close()
@@ -24,8 +24,8 @@ elif len(sys.argv) == 2:
   cur.execute("SELECT word, count FROM Tweetwordcount WHERE word=%s", word)
   records = cur.fetchall()
   for rec in records:
-  print "word = ", rec[0]
-  print "count = ", rec[1], "\n"
+    print "word = ", rec[0]
+    print "count = ", rec[1], "\n"
   
   conn.commit()
   conn.close()
