@@ -42,21 +42,21 @@ conn.commit()
 #to avoid memory overrun when the result contains a large number of rows. 
 
 #Insert
-cur.execute("INSERT INTO Tweetwordcount (word,count) \
-      VALUES ('test', 1)");
-conn.commit()
+#cur.execute("INSERT INTO Tweetwordcount (word,count) \
+      #VALUES ('test', 1)");
+#conn.commit()
 
 #Update
 #Assuming you are passing the tuple (uWord, uCount) as an argument
-cur.execute("UPDATE Tweetwordcount SET count=%s WHERE word=%s", (uWord, uCount))
-conn.commit()
+#cur.execute("UPDATE Tweetwordcount SET count=%s WHERE word=%s", (uWord, uCount))
+#conn.commit()
 
 #Select
-cur.execute("SELECT word, count from Tweetwordcount")
-records = cur.fetchall()
-for rec in records:
-   print "word = ", rec[0]
-   print "count = ", rec[1], "\n"
-conn.commit()
+#cur.execute("SELECT word, count from Tweetwordcount")
+#records = cur.fetchall()
+#for rec in records:
+   #print "word = ", rec[0]
+   #print "count = ", rec[1], "\n"
+#conn.commit()
 
 conn.close()
