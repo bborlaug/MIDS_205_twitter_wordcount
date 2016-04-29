@@ -13,7 +13,7 @@
   $   ...  
   $   ..  
         
-2. **histogram.py** - Script that takes two integers (k1, k2) & returns all words in the stream that have a greater (or equal) number of occurences than k1 & less (or equal number of) occurances than k2.  
+2. **histogram.py** - Script that takes two integers (k1,k2) [**No space**] & returns all words in the stream that have a greater (or equal) number of occurences than k1 & less (or equal number of) occurances than k2.  
     
   *Example:*   
   $ python histogram.py 3,8  
