@@ -1,3 +1,5 @@
+# Python Scripts
+  
 1. **finalresults.py** - Script that takes one word as an argument & replies with the total number of occurences for the word in the stream. If no arguments are passed, script will return all words in stream & their total number of occurences, sorted alphabetically in ascending order.   
     
   EX: $ python finalresults.py hello  
