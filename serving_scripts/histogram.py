@@ -18,7 +18,7 @@ elif len(sys.argv) == 2:
   cur.execute("SELECT word, count FROM Tweetwordcount WHERE count >= %s AND count <= %s ORDER BY word, count", (low,high))
   records = cur.fetchall()
   for rec in records:
-    print "(%s, %d)" %(rec[0], rec[1]), "\n"
+    print "%s: %d" %(rec[0], rec[1]), "\n"
   
   conn.commit()
   conn.close()
