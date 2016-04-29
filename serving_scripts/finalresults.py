@@ -16,7 +16,7 @@ if len(sys.argv) == 1:
   conn.close()
 
 elif len(sys.argv) == 2:
-  print str(sys.argv[1])
+  word=str(sys.argv[1])
   
   conn = psycopg2.connect(database="tcount", user="postgres", password="pass", host="localhost", port="5432")
   cur = conn.cursor()
