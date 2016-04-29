@@ -25,8 +25,7 @@ elif len(sys.argv) == 2:
   cur.execute("SELECT word, count FROM Tweetwordcount WHERE word=%s",[word])
   records = cur.fetchall()
   for rec in records:
-    print "word = ", rec[0]
-    print "count = ", rec[1], "\n"
+    print "Total number of occurences of '%s' = %d" %(rec[0], rec[1]), "\n"
   
   conn.commit()
   conn.close()
