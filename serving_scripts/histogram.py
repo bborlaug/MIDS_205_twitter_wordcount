@@ -15,7 +15,7 @@ elif len(sys.argv) == 2:
   cur = conn.cursor()
   
   #Query - arg
-  cur.execute("SELECT word, count FROM Tweetwordcount WHERE count >= %d AND count <= %d ORDER BY word, count", (low,high))
+  cur.execute("SELECT word, count FROM Tweetwordcount WHERE count >= %s AND count <= %s ORDER BY word, count", (low,high))
   records = cur.fetchall()
   for rec in records:
     print "(%s, %d)" %(rec[0], rec[1]), "\n"
