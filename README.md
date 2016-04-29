@@ -6,8 +6,8 @@
   
 3. Run Streamparse:  
   
-$ cd tweetwordcount  
-$ sparse run  
+    $ cd tweetwordcount  
+    $ sparse run  
   
 4. Run serving scripts, **finalresults.py** & **histogram.py** (see 'serving_scripts' folder for more details).
 
