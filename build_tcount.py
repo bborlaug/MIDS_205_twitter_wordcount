@@ -15,7 +15,7 @@ conn = psycopg2.connect(database="postgres", user="postgres", password="pass")
 cur = conn.cursor()
 
 cur.execute('commit')
-cur.execute("""DROP DATABASE tcount""")
+#cur.execute("""DROP DATABASE tcount""")
 cur.execute("""CREATE DATABASE tcount""")
 conn.commit()
 conn.close()
