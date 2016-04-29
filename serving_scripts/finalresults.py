@@ -22,7 +22,7 @@ elif len(sys.argv) == 2:
   cur = conn.cursor()
   
   #Query - arg
-  cur.execute("SELECT word, count FROM Tweetwordcount WHERE word=%s", word)
+  cur.execute("SELECT word, count FROM Tweetwordcount WHERE word=%s",[word])
   records = cur.fetchall()
   for rec in records:
     print "word = ", rec[0]
